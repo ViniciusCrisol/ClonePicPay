@@ -1,6 +1,17 @@
 import React from "react";
-import { Text } from "react-native";
+
+import { Container, Header, TextHeader, TextHeaderConfig } from "./styles";
+
+import NotificationContainer from "../../components/Notification";
 
 export default function Notification() {
-  return <Text>Notificações</Text>;
+  return (
+    <Container>
+      <Header>
+        <TextHeader>Notificações</TextHeader>
+        <TextHeaderConfig>Configurar</TextHeaderConfig>
+      </Header>
+      <NotificationContainer />
+    </Container>
+  );
 }
