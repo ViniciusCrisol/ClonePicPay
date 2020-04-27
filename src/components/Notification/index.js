@@ -47,7 +47,7 @@ export default function Notification() {
       {/*notificação*/}
 
       {items.map((item) => (
-        <NotificationContainer>
+        <NotificationContainer key={item.key}>
           <NotificationText>{item.text}</NotificationText>
           <NotificationFooter>
             <NotificationDate>{item.date}</NotificationDate>

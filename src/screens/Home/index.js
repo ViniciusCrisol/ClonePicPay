@@ -34,11 +34,6 @@ export default function Home() {
 
           <IconsContainer>
             <AntDesign name="gift" size={30} color="#10c86e" />
-            <MaterialCommunityIcons
-              name="ticket-percent"
-              size={30}
-              color="#10c86e"
-            />
           </IconsContainer>
         </Header>
 
