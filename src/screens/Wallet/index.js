@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { Switch } from "react-native";
+import React, { useState } from 'react';
+import { Switch } from 'react-native';
 import {
   Feather,
   MaterialCommunityIcons,
   FontAwesome,
   AntDesign,
-} from "@expo/vector-icons";
+} from '@expo/vector-icons';
 
 import {
   Wrapper,
@@ -35,9 +35,9 @@ import {
   UseTicketContainer,
   UseTicketButton,
   UseTicketLabel,
-} from "./styles";
+} from './styles';
 
-import crediCard from "../../images/credit-card.png";
+import crediCard from '../../images/credit-card.png';
 
 export default function Wallet() {
   const [isVisible, setVisible] = useState(true);
@@ -56,20 +56,20 @@ export default function Wallet() {
   return (
     <Wrapper>
       <Header
-        colors={useBalance ? ["#52e78c", "#1ab563"] : ["#d3d3d3", "#868686"]}
+        colors={useBalance ? ['#52e78c', '#1ab563'] : ['#d3d3d3', '#868686']}
       >
         <HeaderContainer>
           <Title>Saldo PicPay</Title>
           <BaleanceContainer>
             <Value>
-              R$ <Bold>{isVisible ? "0,00" : "----"}</Bold>
+              R$ <Bold>{isVisible ? '0,00' : '----'}</Bold>
             </Value>
 
             <EyeButton onPress={handleToggleVisibility}>
               <Feather
-                name={isVisible ? "eye" : "eye-off"}
+                name={isVisible ? 'eye' : 'eye-off'}
                 size={28}
-                color="white"
+                color='white'
               />
             </EyeButton>
           </BaleanceContainer>
@@ -78,12 +78,12 @@ export default function Wallet() {
 
           <Actions>
             <Action>
-              <MaterialCommunityIcons name="cash" size={28} color="white" />
+              <MaterialCommunityIcons name='cash' size={28} color='white' />
               <ActionLabel>Adicionar</ActionLabel>
             </Action>
 
             <Action>
-              <FontAwesome name="bank" size={20} color="white" />
+              <FontAwesome name='bank' size={20} color='white' />
               <ActionLabel>Retirar</ActionLabel>
             </Action>
           </Actions>
@@ -108,10 +108,10 @@ export default function Wallet() {
               </CardInfo>
             </CardDetails>
 
-            <Img source={crediCard} resizeMode="contain" />
+            <Img source={crediCard} resizeMode='contain' />
           </CardBody>
           <AddButton>
-            <AntDesign name="pluscircleo" size={30} color="#0db060" />
+            <AntDesign name='pluscircleo' size={30} color='#0db060' />
             <AddLabel>Adiconar cartão de crédito</AddLabel>
           </AddButton>
         </PaymentMethodsCard>
@@ -119,9 +119,9 @@ export default function Wallet() {
         <UseTicketContainer>
           <UseTicketButton>
             <MaterialCommunityIcons
-              name="ticket-outline"
+              name='ticket-outline'
               size={20}
-              color="#0db060"
+              color='#0db060'
             />
             <UseTicketLabel>Usar código promocional</UseTicketLabel>
           </UseTicketButton>
